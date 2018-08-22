@@ -2,7 +2,7 @@
 
 namespace Shared.Models
 {
-    class ConferenceModel
+    public class ConferenceModel
     {
         public ConferenceModel()
         {
