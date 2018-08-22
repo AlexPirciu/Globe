@@ -11,6 +11,7 @@ namespace Globe
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddSingleton<IConferenceService, ConferenceMemoryService>();
             services.AddSingleton<IProposalService, ProposalMemoryService>();
         }
@@ -24,6 +25,12 @@ namespace Globe
             }
 
             app.UseStaticFiles();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Conference}/{action=Index}/{id?}");
+            });
         }
     }
 }
