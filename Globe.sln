@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globe", "Globe\Globe.csproj", "{EF860A99-D2D0-44F0-9A96-80619036FFB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Globe", "Globe\Globe.csproj", "{EF860A99-D2D0-44F0-9A96-80619036FFB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{C73EA084-8064-4651-887E-4B69FEF153CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EF860A99-D2D0-44F0-9A96-80619036FFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF860A99-D2D0-44F0-9A96-80619036FFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF860A99-D2D0-44F0-9A96-80619036FFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C73EA084-8064-4651-887E-4B69FEF153CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73EA084-8064-4651-887E-4B69FEF153CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C73EA084-8064-4651-887E-4B69FEF153CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73EA084-8064-4651-887E-4B69FEF153CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
