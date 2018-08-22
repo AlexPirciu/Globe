@@ -11,7 +11,7 @@
     <td>
         @if (!Model.Approved)
         {
-            <a asp-controller="Proposal" asp-action="Approve" asp-route-proposalId="@Model.Id">Approve</a>
+            <a asp-action="Approve" asp-route-proposalId="@Model.Id">Approve</a>
         }
     </td>
 </tr>
