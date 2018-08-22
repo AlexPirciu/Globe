@@ -38,7 +38,7 @@ namespace Globe.Services
 
         public Task<IEnumerable<ProposalModel>> GetAll(int conferenceId)
         {
-            return Task.Run(() => _proposals.Where(p => p.ConferenceId == conferenceId));
+            return Task.Run(() => _proposals.AsEnumerable().Where(c => c.ConferenceId == conferenceId));
         }
 
         public Task Add(ProposalModel model)
