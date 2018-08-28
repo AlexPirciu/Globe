@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Globe
 {
@@ -22,6 +23,9 @@ namespace Globe
             services.AddMvc();
             services.AddSingleton<IConferenceService, ConferenceMemoryService>();
             services.AddSingleton<IProposalService, ProposalMemoryService>();
+
+            services.AddHttpClient("GlobeApi", c => c.BaseAddress = new Uri("https://localhost:44359"));
+
             services.Configure<GlobeOptions>(_configuration.GetSection("Globe"));
         }
 
