@@ -16,7 +16,7 @@
 </div>
 <div class="row">
     <div class="col-md-2">
-        @Component.InvokeAsync("Statistics", new { statsCaption = "Statistics" })
+        @await Component.InvokeAsync("Statistics", new { statsCaption = "Statistics" })
     </div>
     <div class="col-md-4">
         <a asp-action="Add">Add</a>

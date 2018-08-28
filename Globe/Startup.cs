@@ -21,8 +21,8 @@ namespace Globe
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<IConferenceService, ConferenceMemoryService>();
-            services.AddSingleton<IProposalService, ProposalMemoryService>();
+            services.AddSingleton<IConferenceService, ConferenceApiService>();
+            services.AddSingleton<IProposalService, ProposalApiService>();
 
             services.AddHttpClient("GlobeApi", c => c.BaseAddress = new Uri("https://localhost:44359"));
 
